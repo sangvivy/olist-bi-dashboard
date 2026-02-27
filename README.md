@@ -122,9 +122,10 @@ Price Bin = SWITCH(TRUE(),
     Fact_OrderItems[price] < 500, "R$200-R$500",
     "Over R$500"
 )
+```
 
-💡 Key Insights Discovered
-Revenue & Sales
+## 💡 Key Insights Discovered
+- Revenue & Sales
 Total Revenue: R$2.3 Million across 98,500 orders
 
 Average Order Value: R$23.40 (affordable price point)
@@ -133,7 +134,7 @@ Seasonal Peak: November-December holiday season sees 25% higher sales
 
 Growth Rate: 15% year-over-year growth (2017 → 2018)
 
-Product Performance
+- Product Performance
 Top Category: bed_bath_table generates 20% of total revenue
 
 Price Sweet Spot: R$50-R$200 range generates 55% of revenue
@@ -142,7 +143,7 @@ Freight Economics: Average freight = R$18.50 (16% of order value)
 
 Product Concentration: Top 10 products generate 22% of revenue
 
-Customer Geography
+- Customer Geography
 São Paulo (SP): 35% of customers - primary market
 
 Rio de Janeiro (RJ): 18% of customers - second largest
@@ -151,7 +152,7 @@ Minas Gerais (MG): 12% of customers - strong interior presence
 
 Southeast Region: 65% of total customers
 
-Operational Insights
+- Operational Insights
 Average Delivery: 12 days nationwide
 
 North Region: 28% late delivery rate (critical issue)
@@ -161,7 +162,8 @@ Southeast Region: 5% late delivery rate (excellent)
 Business Impact: Late deliveries reduce review scores by 26%
 
 Seller Concentration: 60% of sellers located in SP/RJ/MG
-🎯 Strategic Recommendations
+
+## 🎯 Strategic Recommendations
 1. Logistics Optimization
 Open regional warehouse in Northeast to reduce 15% late rate
 
@@ -190,20 +192,8 @@ Implement post-purchase tracking communications
 
 Compensate for late deliveries to maintain satisfaction
 
-📷 Screenshots
-Executive Dashboard
-https://screenshots/executive-dashboard.png
 
-Product Analysis
-https://screenshots/product-analysis.png
-
-Geographic Operations
-https://screenshots/geographic-operations.png
-
-Data Model
-https://screenshots/data-model.png
-
-🚀 How to Use
+# 🚀 How to Use
 Prerequisites
 Power BI Desktop (free download from Microsoft)
 
@@ -212,8 +202,9 @@ Olist dataset from Kaggle
 Installation Steps
 Clone this repository
 
-bash
+``` bash
 git clone https://github.com/yourusername/olist-bi-dashboard.git
+```
 Download the dataset
 
 Visit Kaggle Dataset
@@ -236,7 +227,7 @@ Use slicers to filter by year, category, state
 
 Click visuals to cross-filter
 
-📁 Repository Structure
+# 📁 Repository Structure
 text
 olist-bi-dashboard/
 │
@@ -262,18 +253,6 @@ olist-bi-dashboard/
     ├── power-query-steps.md
     ├── dax-measures.md
     └── data-modeling.md
-📊 Live Dashboard
-Access the interactive dashboard here:
-Power BI Public Link
-
-👨‍💻 Author
-Your Name
-
-Role: Business Intelligence Analyst
-
-Project: Academic Assessment / Professional Portfolio
-
-Date: February 2026
 
 📝 License
 This project is for educational purposes. Dataset provided by Olist via Kaggle.
@@ -285,20 +264,6 @@ Kaggle for dataset hosting
 
 Power BI community for DAX and M language resources
 
-📧 Contact
-For questions or collaboration:
-
-Email: your.email@example.com
-
-LinkedIn: Your LinkedIn Profile
-
-GitHub: @yourusername
-
-⭐ If you find this project useful, please consider starring the repository!
-
-text
-
----
 
 ## Additional Files You Should Create
 
