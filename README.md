@@ -55,7 +55,6 @@ The dashboard enables data-driven decision-making by transforming raw transactio
 │ Dim_Products │◄───│ Fact_OrderItems │───►│ Dim_Sellers │
 └──────────────┘ └────────┬────────┘ └──────────────┘
 │
-▼
 ┌─────────────────┐ ┌─────────────────┐
 │ Dim_Orders │◄───│ Fact_Payments │
 └─────────────────┘ └─────────────────┘
@@ -105,15 +104,18 @@ The dashboard enables data-driven decision-making by transforming raw transactio
 // Revenue Measures
 Total Revenue = SUM(Fact_OrderItems[price])
 Revenue YoY% = DIVIDE([Total Revenue] - [Revenue PY], [Revenue PY])
-
+```
+```
 // Customer Measures
 Total Customers = DISTINCTCOUNT(Dim_Customers[customer_unique_id])
-
+```
+```
 // Delivery Measures
 Avg Delivery Days = AVERAGEX(Dim_Orders, 
     DATEDIFF(Dim_Orders[order_purchase_timestamp], 
              Dim_Orders[order_delivered_customer_date], DAY))
-
+```
+```
 // Product Measures
 Price Bin = SWITCH(TRUE(),
     Fact_OrderItems[price] < 50, "Under R$50",
@@ -194,12 +196,12 @@ Compensate for late deliveries to maintain satisfaction
 
 
 # 🚀 How to Use
-Prerequisites
+- Prerequisites
 Power BI Desktop (free download from Microsoft)
 
-Olist dataset from Kaggle
+- Olist dataset from Kaggle
 
-Installation Steps
+- Installation Steps
 Clone this repository
 
 ``` bash
@@ -228,7 +230,8 @@ Use slicers to filter by year, category, state
 Click visuals to cross-filter
 
 # 📁 Repository Structure
-text
+
+``` text
 olist-bi-dashboard/
 │
 ├── olist-bi-dashboard.pbix          # Main Power BI file
@@ -253,11 +256,12 @@ olist-bi-dashboard/
     ├── power-query-steps.md
     ├── dax-measures.md
     └── data-modeling.md
+```
 
-📝 License
+# 📝 License
 This project is for educational purposes. Dataset provided by Olist via Kaggle.
 
-🙏 Acknowledgments
+# 🙏 Acknowledgments
 Olist for providing the public dataset
 
 Kaggle for dataset hosting
@@ -268,10 +272,11 @@ Power BI community for DAX and M language resources
 ## Additional Files You Should Create
 
 ### 1. `requirements.txt`
-```txt
+txt
 Power BI Desktop (latest version)
 Olist Dataset from Kaggle
-2. documentation/power-query-steps.md
+
+# 2. documentation/power-query-steps.md
 markdown
 # Power Query Transformation Steps
 
@@ -305,7 +310,8 @@ markdown
 12. Renamed query
 
 [Continue for all tables...]
-3. documentation/dax-measures.md
+
+# 3. documentation/dax-measures.md
 markdown
 # DAX Measures Reference
 
